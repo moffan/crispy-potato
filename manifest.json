@@ -1,11 +1,11 @@
 {
-	"id": "sample-plugin",
-	"name": "Sample Plugin",
-	"version": "1.0.0",
-	"minAppVersion": "0.15.0",
+	"id": "crispy-potato",
+	"name": "crispy-potato",
+	"version": "0.0.0",
+	"minAppVersion": "1.5.3",
 	"description": "Demonstrates some of the capabilities of the Obsidian API.",
 	"author": "Obsidian",
-	"authorUrl": "https://obsidian.md",
-	"fundingUrl": "https://obsidian.md/pricing",
-	"isDesktopOnly": false
+	"authorUrl": "https://github.com/moffan/crispy-potato",
+	"fundingUrl": "https://github.com/moffan/crispy-potato",
+	"isDesktopOnly": true
 }
