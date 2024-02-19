@@ -1,4 +1,4 @@
-import { CrispyPotatoPluginSettings } from "../settings";
+import { CrispyPotatoPluginSettings } from "../settings-tab";
 import { GitHub, GitHubIssues } from "./github";
 import { removeSpecialChars } from "./string-utils";
 import { TFile, Vault } from "obsidian";

@@ -3,7 +3,7 @@ import {
 	DEFAULT_SETTINGS,
 	CrispyPotatoPluginSettings,
 	CrispyPotatoSettingTab,
-} from "./settings";
+} from "./settings-tab";
 import { GitHub } from "./utils/github";
 import { IssueManagementView, VIEW_TYPE_ISSUE_MANAGEMENT } from "./issue-management"
 

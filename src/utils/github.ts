@@ -1,5 +1,5 @@
 import { Octokit } from "octokit";
-import type { CrispyPotatoPluginSettings } from "../settings";
+import type { CrispyPotatoPluginSettings } from "../settings-tab";
 
 type IssueState = "all" | "open" | "closed" | undefined;
 
