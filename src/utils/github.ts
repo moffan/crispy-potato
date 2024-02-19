@@ -32,7 +32,6 @@ export class GitHub {
 			state,
 		};
 
-		console.log("getting issues from github")
 		const issueData = await this.octokit.paginate(
 			this.octokit.rest.issues.listForRepo,
 			options
