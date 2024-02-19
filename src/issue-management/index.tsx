@@ -4,7 +4,7 @@ import { Root, createRoot } from "react-dom/client";
 import { ReactView } from "./react-view";
 import { AppContext } from "./context";
 import { GitHub } from "../utils/github"
-import { CrispyPotatoPluginSettings } from "src/settings";
+import { CrispyPotatoPluginSettings } from "src/settings-tab";
 
 export const VIEW_TYPE_ISSUE_MANAGEMENT = "issue-management-view";
 
