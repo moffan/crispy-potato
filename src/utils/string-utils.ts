@@ -1,3 +1,5 @@
 export function removeSpecialChars(str: string): string {
-    return str.replace(/[^\w\s]/gi, "");
+    const regex = /[^\w\.\-æøåÆØÅ\s]/g
+    
+    return str.replace(regex, "");
 }
