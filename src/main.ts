@@ -1,4 +1,4 @@
-import { Notice, Plugin, WorkspaceLeaf } from "obsidian";
+import { Plugin, WorkspaceLeaf } from "obsidian";
 import {
 	DEFAULT_SETTINGS,
 	CrispyPotatoPluginSettings,
@@ -8,15 +8,15 @@ import { GitHub } from "./utils/github";
 import { IssueManagementView, VIEW_TYPE_ISSUE_MANAGEMENT } from "./issue-management"
 
 export default class CrispyPotatoPlugin extends Plugin {
-	settings: CrispyPotatoPluginSettings;
-	github: GitHub
+	settings!: CrispyPotatoPluginSettings;
+	github!: GitHub;
 
 	async onload() {
 		await this.loadSettings();
 		this.addSettingTab(new CrispyPotatoSettingTab(this.app, this));
 
 		this.github = new GitHub(this.settings);
-		const user = await this.github?.login();
+		const user = await this.github.login();
 
 		this.registerView(
 			VIEW_TYPE_ISSUE_MANAGEMENT,
@@ -24,6 +24,7 @@ export default class CrispyPotatoPlugin extends Plugin {
 				const options = {
 					github: this.github, settings: this.settings
 				}
+
 				return new IssueManagementView(leaf, options)
 			}
 		);

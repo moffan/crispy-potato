@@ -1,5 +1,5 @@
 import { PluginSettingTab, App, Setting } from "obsidian";
-import type { CrispyPotatoPlugin } from "./plugin";
+import CrispyPotatoPlugin from "./main";
 
 export interface CrispyPotatoPluginSettings {
 	auth: string;
