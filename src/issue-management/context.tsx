@@ -1,6 +1,6 @@
 import { createContext, useContext } from "react";
 import { App } from "obsidian";
-import type { GitHub } from "../utils/octokit";
+import type { GitHub } from "../utils/github";
 import type { CrispyPotatoPluginSettings } from "src/settings";
 
 

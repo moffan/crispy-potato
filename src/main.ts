@@ -4,7 +4,7 @@ import {
 	CrispyPotatoPluginSettings,
 	CrispyPotatoSettingTab,
 } from "./settings";
-import { GitHub } from "./utils/octokit";
+import { GitHub } from "./utils/github";
 import { IssueManagementView, VIEW_TYPE_ISSUE_MANAGEMENT } from "./issue-management"
 
 export default class CrispyPotatoPlugin extends Plugin {
